@@ -3,7 +3,10 @@
   "version": "2.0.3",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "postversion": "npm publish",
+    "postpublish": "git push && git push --tags"
+  },
   "author": "Expression Atlas developers <atlas-developers@ebi.ac.uk>",
   "collaborators": [
     "Monica Jianu <monica@ebi.ac.uk>",
